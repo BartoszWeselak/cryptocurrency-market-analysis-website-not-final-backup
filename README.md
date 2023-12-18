@@ -1,9 +1,3 @@
-# N1
-
-## N2
-
-## N3
-
 ```bash
 wymagany jest najnowsza wersja node https://nodejs.org/en/download/current
 ```
@@ -30,4 +24,10 @@ npx prisma db push
 
 ```bash
 npm run dev
+```
+
+```bash
+aby sie zalogowac uzyj nastepujacych  danych:
+email: admin@gmail.com
+haslo: 12345
 ```
