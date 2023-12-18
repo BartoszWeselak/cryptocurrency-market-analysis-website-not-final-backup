@@ -92,7 +92,7 @@ export default function Home() {
             "loading"
           ) : isError ? (
             "error"
-          ) : !data.length ? (
+          ) : !data?.length ? (
             "is empty"
           ) : (
             <CryptoTable data={memoizedData} />

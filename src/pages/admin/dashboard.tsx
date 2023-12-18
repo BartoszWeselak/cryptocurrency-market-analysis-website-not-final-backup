@@ -74,7 +74,7 @@ const AdminDashboardPage = () => {
   }
 
   function handleAddCurrencyHistory() {
-    addCurrencyHistoryMutation.mutate({ currencyName: "ethereum" });
+    addCurrencyHistoryMutation.mutate({ currencyName: "maker" });
   }
   return (
     <Layout>

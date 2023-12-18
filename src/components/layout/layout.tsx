@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           height={100}
         /> */}
         {!session && (
-          <Button className="mx-2 " onClick={() => setIsOpenLoginModal(true)}>
+          <Button className="mx-2 " onClick={() => signIn()}>
             Login
           </Button>
         )}
@@ -50,16 +50,13 @@ const Header: React.FC = () => {
           onClose={() => setIsOpenLoginModal(false)}
         >
           <h2>Login</h2>
-          <p>Please selecect login method</p>
+          {/* <p>Please selecect login method</p>
           <Button className="mx-2" onClick={() => signIn()}>
             LoginButtonDiscord
-          </Button>
+          </Button> */}
         </Modal>
         {!session && (
-          <Button
-            className="mx-2"
-            onClick={() => setIsOpenRegisterModal(true)}
-          ></Button>
+          <Button className="mx-2" onClick={() => signIn()}></Button>
         )}
         <Modal
           isOpen={isOpenRegisterModal}
